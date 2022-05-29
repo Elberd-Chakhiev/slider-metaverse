@@ -1,9 +1,16 @@
-@font-face {
-    font-family: 'Tarrger Laser';
-    src: url('tarrget laser/tarrget-laser-regular.ttf') format('truetype');
+/* @font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeue/HelveticaNeue-Bold.ttf') format('truetype'),
+    url('Gordita-Medium.woff2') format('woff2'),
+    url('HelveticaNeue/HelveticaNeue-Bold.woff') format('woff'),
+    url('HelveticaNeue/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+    url('HelveticaNeue/HelveticaNeue-Bold.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-}
+} */
+
+
+
 @font-face {
     font-family: 'Gordita';
     src: url('Gordita-Medium.eot');

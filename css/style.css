@@ -427,6 +427,18 @@ html, body {
   font-family: 'Gordita';
 }
 
+@font-face {
+  font-family: "NasalizationW05 ExtraLight";
+
+  src: url("//db.onlinewebfonts.com/t/6d0deb5b05d75d77cc1e0da849c511ff.eot");
+
+  src: url("//db.onlinewebfonts.com/t/6d0deb5b05d75d77cc1e0da849c511ff.eot?#iefix") format("embedded-opentype"), 
+         url("//db.onlinewebfonts.com/t/6d0deb5b05d75d77cc1e0da849c511ff.woff2") format("woff2"), 
+         url("//db.onlinewebfonts.com/t/6d0deb5b05d75d77cc1e0da849c511ff.woff") format("woff"), 
+         url("//db.onlinewebfonts.com/t/6d0deb5b05d75d77cc1e0da849c511ff.ttf") format("truetype"), 
+         url("//db.onlinewebfonts.com/t/6d0deb5b05d75d77cc1e0da849c511ff.svg#NasalizationW05-ExtraLight") format("svg");
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -1904,9 +1916,8 @@ html, body {
   border-style: none;
 }
 
-.border-\[\#E82ECA\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(232 46 202 / var(--tw-border-opacity));
+.border-\[\#E89CD5FF\] {
+  border-color: #E89CD5FF;
 }
 
 .border-white {
@@ -1919,9 +1930,8 @@ html, body {
   background-color: rgb(10 10 10 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#E82ECA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(232 46 202 / var(--tw-bg-opacity));
+.bg-\[\#E89CD5FF\] {
+  background-color: #E89CD5FF;
 }
 
 .bg-\[\#151515\] {
@@ -2201,8 +2211,8 @@ html, body {
   vertical-align: super;
 }
 
-.font-\[\'Tarrger_Laser\'\] {
-  font-family: 'Tarrger Laser';
+.font-\[\'NasalizationW05_ExtraLight\'\] {
+  font-family: 'NasalizationW05 ExtraLight';
 }
 
 .font-\[\'some_font\'\2c sans-serif\] {
@@ -2336,9 +2346,8 @@ html, body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#E82ECA\] {
-  --tw-text-opacity: 1;
-  color: rgb(232 46 202 / var(--tw-text-opacity));
+.text-\[\#E89CD5FF\] {
+  color: #E89CD5FF;
 }
 
 .text-black {
@@ -2741,12 +2750,9 @@ img{
   margin-left: auto;
   margin-right: auto;
   max-width: 1400px;
-  border-width: 1px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(185 28 28 / var(--tw-border-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
+  /* border  border-solid border-red-700 */
 }
 
 #arrow_bottom::after{
@@ -2876,18 +2882,16 @@ input {
   content: var(--tw-content);
 }
 
-.hover\:bg-\[\#E82ECA\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(232 46 202 / var(--tw-bg-opacity));
+.hover\:bg-\[\#E89CD5FF\]:hover {
+  background-color: #E89CD5FF;
 }
 
 .hover\:font-bold:hover {
   font-weight: 700;
 }
 
-.hover\:text-\[\#E82ECA\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(232 46 202 / var(--tw-text-opacity));
+.hover\:text-\[\#E89CD5FF\]:hover {
+  color: #E89CD5FF;
 }
 
 .hover\:text-black:hover {
