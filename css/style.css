@@ -2762,8 +2762,7 @@ img{
 .green-border-20px {
   border-radius: 20px;
   border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(232 46 202 / var(--tw-border-opacity));
+  border-color: #E89CD5FF;
 }
 
 .fade-right-after-click{
