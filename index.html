@@ -7,6 +7,8 @@
     <title>avatars planet | screen-slider </title>
     <link rel="icon" href="img/logo.svg">
 
+    <script src="js/dat.gui.min.js" defer></script>
+    <script src="js/vanilla.tilt.min.js" defer></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -14,7 +16,17 @@
 
     <!-- <link href="//db.onlinewebfonts.com/c/6d0deb5b05d75d77cc1e0da849c511ff?family=NasalizationW05_ExtraLight" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="fonts/font.css">
+    <!-- <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/output.css"> -->
     <link rel="stylesheet" href="css/style.css">
+
+
+    
+    <script type="text/javascript">
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-105392568-1', 'auto');
+        ga('send', 'pageview');
+      </script>
     
 </head>
 <body class="bg-[#0A0A0A]">
@@ -26,7 +38,7 @@
             
     </div>
 
-        <header class="scroll_is_true absolute left-0 z-30
+        <header id="navigation" class="scroll_is_true absolute left-0 z-30
         flex justify-between items-center text-[12px]
         whitespace-nowrap container "
         style="top: 15px; left: 50%; transform: translate(-50%, 0);">
@@ -82,19 +94,19 @@
          border border-white rounded-full">
         </div>
 
-        <div class="swiper-pagination static w-5 ml-2"></div>
+        <!-- <div class="swiper-pagination static w-5 ml-2"></div> -->
 
-        <div class="w-[40px] mx-2" 
+        <!-- <div class="w-[40px] mx-2" 
           style="border-top: 0.3px solid #E89CD5FF;">
-        </div>
+        </div> -->
 
 
-        <div class="uppercase">main</div>
+        <!-- <div class="uppercase">main</div> -->
 
-        <div class="
+        <!-- <div class="
          w-[955px] mx-2"
          style="border-top: 0.3px solid #fff;">
-       </div>
+       </div> -->
 
 
        <div class="uppercase ">
@@ -114,70 +126,289 @@
 
 
 
-            <section class="swiper-slide relative 
-            2xl:flex 2xl:justify-center 2xl:items-center">
 
-                <div class="absolute bottom-0 right-0 max-w-[700px] -z-10
-                2xl:hidden"> 
-                    <img src="img/1/header_man.png" alt="man">
+            <section class="fadeAnimateSlide  z-10 swiper-slide relative 
+            2xl:flex 2xl:justify-center 2xl:items-center 
+            "> 
+
+            <div class="wrapp relative">
+
+
+
+                <div class=" absolute left-[50%] translate-x-[-50%]">
+                  <div class="container flex flex-col h-[85vh]"> 
+          
+                    <!-- <p style="
+                      font-family: 'NasalizationW05-ExtraLight';
+                      text-shadow: 1px 1px 0px #000;"
+                     class="text-white mx-auto text-center lg:max-w-[220px] mt-[30px] lg:text-[4vw]
+                     lg:mt-[90px]">
+                      <b>THE FUTURE</b> <br> OF MULTI-CHAIN <br class="hidden md:block">  LIVING SYSTEM
+                    </p> -->
+          
+                    <div class="header_wrapp z-0 font-['NasalizationW05_ExtraLight']">
+                      <h1 class=" header_main-title leading-[9vw]
+                      md:text-[14vw] md:leading-[14vw] md:text-center" data-tilt data-tilt-full-page-listening>avatars 
+                      <br class="hidden md:block"> planet</h1>
+                    </div>
+          
+
+                    
+                  </div>
+                </div>
+          
+          
+          
+          
+              </div>
+    
+                <canvas></canvas> 
+
+
+
+                <!-- <iframe width="100%" height="100%" src="background/index.html" frameborder="0"></iframe> -->
+
+
+            </section>
+
+
+
+
+
+            <section class="swiper-slide fadeAnimateSlide" >
+
+                <div class="container mt-24">
+
+                    <h2 class="font-['NasalizationW05_ExtraLight'] text-2xl mb-8"> lets start! </h2>
+
+                    <div class="swiper_second_slide">
+                        <div class="swiper-wrapper">
+
+
+
+                            <div class="swiper-slide min-h-[551px] transition-all rounded flex flex-col justify-between gridAnimate">
+                                
+                                <div class="flex uppercase font-['NasalizationW05_ExtraLight'] text-[18px] px-[20px] pt-[20px] h-[54px] max-h-[54px]"> 
+                                    <span>1</span>
+                                    <span class="text-[#E89CD5FF] ml-[30px] inline-block">buy World</span>
+                                 </div>
+
+                                 <div class="-mt-6 relative -z-10 max-w-[380px] mx-auto">
+                                     <img src="img/2/slide_1.png" alt="sphere">
+                                 </div>
+
+                                 <div class=" rounded-[20px] p-[20px] flex flex-col justify-between min-h-[252px] mx-auto">
+                                    
+                                    <p class="text-[14px]">
+                                        Покупай землю в разделе WORLDS, 
+                                        создавай свой мир без ограничений , 
+                                        организуй криптодеревни и сообщества 
+                                        и зарабатывай!  
+                                        Посещай миры ведущих мировых брендов, 
+                                        артистов и друзей
+                                    </p>
+
+                                    <div class="uppercase font-['NasalizationW05_ExtraLight'] text-center
+                                    mt-[40px]"> 
+                                        <a href="http://weimei9l.beget.tech/solar-system/" class="inline-block transition-all
+                                        hover:bg-[#E89CD5FF] hover:text-black
+                                        green-border-20px px-[30%] py-[28px]
+                                        xl:px-[40px] xl:py-[20px]" tar>start</a> 
+                                    </div>
+
+                                 </div>
+
+                            </div>
+                            
+                            
+                            <div class="swiper-slide min-h-[551px] transition-all rounded flex flex-col justify-between gridAnimate">
+                                
+                                <div class="flex uppercase font-['NasalizationW05_ExtraLight'] text-[18px] px-[20px] pt-[20px] h-[54px] max-h-[54px]"> 
+                                    <span>2</span>
+                                    <span class="text-[#E89CD5FF] ml-[30px] inline-block">buy AVATARS                                     </span>
+                                 </div>
+
+                                 <div class="-mt-6 relative -z-10 max-w-[380px] mx-auto">
+                                     <img src="img/2/slide_2.png" alt="sphere">
+                                 </div>
+
+                                 <div class="rounded-[20px] p-[20px] flex flex-col justify-between min-h-[252px] mx-auto">
+                                    
+                                    <p class="text-[14px]">
+                                        Создай своего персонального 
+                                        аватара или выбери 
+                                        виртуальную модель с 
+                                        уникальной историей в 
+                                        разделе AVATARS
+                                    </p>
+
+                                    <div class="uppercase font-['NasalizationW05_ExtraLight'] text-center
+                                    mt-[40px]"> 
+                                        <a href="#" class="inline-block transition-all
+                                        hover:bg-[#E89CD5FF] hover:text-black
+                                        green-border-20px px-[30%] py-[28px]
+                                        xl:px-[40px] xl:py-[20px]">start</a> 
+                                    </div>
+
+                                 </div>
+
+                            </div>
+                            
+                            <div class="swiper-slide min-h-[551px] transition-all rounded flex flex-col justify-between gridAnimate">
+                                
+                                <div class="flex uppercase font-['NasalizationW05_ExtraLight'] text-[18px] px-[20px] pt-[20px] h-[54px] max-h-[54px]"> 
+                                    <span>3</span>
+                                    <span class="text-[#E89CD5FF] ml-[30px] inline-block">buy fashion for avatars</span>
+                                 </div>
+
+                                 <div class="-mt-6 relative -z-10 max-w-[380px] mx-auto">
+                                     <img src="img/2/slide_3.png" alt="sphere">
+                                 </div>
+
+                                 <div class="rounded-[20px] p-[20px] flex flex-col justify-between min-h-[252px] mx-auto">
+                                    
+                                    <p class="text-[14px]">
+                                        Собери уникальный образ 
+                                        для своего аватара в разделе 
+                                        Fashion и покупай модную одежду 
+                                        у современных диджитал дизайнеров 
+                                        и брендов
+                                    </p>
+
+                                    <div class="uppercase font-['NasalizationW05_ExtraLight'] text-center
+                                    mt-[40px]"> 
+                                        <a href="#" class="inline-block transition-all
+                                        hover:bg-[#E89CD5FF] hover:text-black
+                                        green-border-20px px-[30%] py-[28px]
+                                        xl:px-[40px] xl:py-[20px]">start</a> 
+                                    </div>
+
+                                 </div>
+
+                            </div>
+                            
+
+
+
+                        </div>
+                    </div>  
                 </div>
 
+            </section>
 
 
-                <div class="container mt-28 2xl:flex 
-                2xl:justify-around 2xl:items-center
-                2xl:mt-0 relative">
+            <section class="swiper-slide fadeAnimateSlide">
+                
+                <div class="container mt-24">
+                    <h2 class="font-['NasalizationW05_ExtraLight'] text-2xl mb-[70px]"> OBJ Coin  </h2>
 
 
-                    <div  class="mainPageInfo transition-all duration-700 relative uppercase lg:text-center">
+                    <div class="grid grid-cols-2 grid-rows-1 2xl:grid-cols-1 animateSlideCoin">
+                        
+                        <div class="flex flex-col justify-between max-w-[598px]
+                        2xl:max-w-full 2xl:flex-row 2xl:w-full md:overflow-auto">
+                            <div class="p-[30px] green-border-20px 2xl:mr-6 
+                            md:min-w-[300px]"> 
+                                <div class="text-[#E89CD5FF] font-['NasalizationW05_ExtraLight'] mb-6">Mining</div>    
+                                
+                                <p class="text-[20px] lg:text-[14px]">
+                                    Сделай свой мир популярным 
+                                    и зарабатывай больше!  
+                                    Чем больше гостей — 
+                                    тем выше процент от стейкинга.
+                                </p>
 
-                        <div class="font-['NasalizationW05_ExtraLight'] text-[#E89CD5FF]
-                        text-[35px]" >Welcome to
+                            </div>
+                            <div class="p-[30px] green-border-20px mt-[26px] 2xl:mt-0
+                            md:min-w-[300px]">
+                                <div class="text-[#E89CD5FF] font-['NasalizationW05_ExtraLight'] mb-6">Exchange & SWAP</div>
+
+                                <p class="text-[20px] lg:text-[14px]">
+                                    Генерируй Obj Coin в AVATARS PLANET  
+                                    и легко конвертируй их на внутреннем свопе 
+                                    в популярные криптовалютные пары:
+                                    USDT / OBJ , DOGE / OBJ, ETH / OBJ, BTC/ OBJ, 
+                                    MATIC / OBJ и так далее..
+                                    Мгновенные внутренние переводы между участниками.
+                                    SWAP и доступ к финансовым 
+                                    инструментам внутри платформы. 
+                                </p>
+
+                            </div>
                         </div>
 
-                        <h1 class="font-['NasalizationW05_ExtraLight'] text-[54px]
-                        leading-[54px] mt-[15px] mb-[25px] font-bold"
-                         >Avatars <br>Planet
-                        </h1>
 
-                        <div class="max-w-[310px] text-[14px] mb-[25px]">
-                            <p>
-                                Свободная и децентрализованная 
-                                метаверс платформа
-                            </p>
+                        <div class="rounded-[20px] overflow-hidden ml-4 2xl:hidden">
+                            <img src="img/3/main_imagejpg.jpg" alt="coin image">
                         </div>
 
 
-                        <div class="flex flex-wrap justify-between max-w-[380px]
-                        text-[12px] lg:flex-col">
- 
-                                <a href="#" 
-                                 class="block bg-[#E89CD5FF]
-                                 text-black 
-                                 px-[25px] py-[15px]
-                                 rounded-[20px] lg:mb-4">White list avatars
-                                </a>
- 
-                                <a href="#" 
-                                 class="block
-                                 px-[25px] py-[15px]
-                                 green-border-20px">
-                                    White list planets
-                                </a>
-                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="swiper-slide flex justify-center items-center fadeAnimateSlide">
+                <div class="container">
 
 
-                        <div class="object-cover absolute -z-10
+                    <div class="flex justify-between relative xl:flex-col">
+
+                        <div class="object-cover absolute -z-10 rounded-full
                         left-5 w-[1500px] top-0 h-[1500px] pointer-events-none
-                        translate-x-[-40%] translate-y-[-40%]
+                        translate-x-[-35%] translate-y-[-35%]
                         ">
                         <img src="img/blur.png" alt="">
+                        </div>
+
+                        <div class="max-w-[820px] p-[30px] green-border-20px flex 
+                        justify-center items-center">
+                            <img src="img/4/table.svg" alt="">
+                        </div>
+                        <div class="ml-8 max-w-[40%] flex flex-col justify-between
+                        xl:max-w-full xl:ml-0 xl:mt-[40px]">
+                            <div class="p-[30px] green-border-20px "> 
+                                <div class="text-[#E89CD5FF] font-['NasalizationW05_ExtraLight'] mb-6">Exchange & SWAP</div>    
+                                
+                                <p class="text-[20px] lg:text-[12px]">
+                                    AVATARS PLANET, это рыночная модель 
+                                    в которой нет ограничения максимальной 
+                                    циркуляции миров. 
+                                   После каждой покупки земли в метаверсе, 
+                                   создаются новые, часть из которых в 
+                                   последствии “сжигается” не будучи купленной. 
+                                </p>
+
+                            </div>
+
+                            <div class="uppercase font-['NasalizationW05_ExtraLight'] text-center
+                            mt-[40px] w-full"> 
+                                        <a href="#" class="inline-block transition-all
+                                        hover:bg-[#E89CD5FF] hover:text-black
+                                        green-border-20px w-full py-[28px]
+                                        xl:px-[40px] xl:py-[20px]">buy coin</a> 
+                            </div>
                         </div>
                     </div>
 
 
+                </div>
+            
+            </section>
+
+
+
+            <section class="swiper-slide flex justify-center items-center fadeAnimateSlide">
+
+                <div class="container">
+                    <h2 class="font-['NasalizationW05_ExtraLight'] text-2xl"> transfer your coins to:  </h2>
+
+
+
                     <div class="mainPageInfo grid grid-cols-3 grid-rows-2 gap-4
-                    max-w-[580px] mt-32 2xl:mt-0 transition-all duration-700
+                    max-w-[580px] mt-4 2xl:mt-0 transition-all duration-700
                     xl:grid-cols-2 xl:grid-rows-3 
                     
                     lg:opacity-0 lg:invisible lg:absolute">
@@ -237,7 +468,7 @@
                              <div class=" min-w-[60px] h-full border-l border-[#E89CD5FF]
                              flex justify-end items-center font-bold">  
                              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.9497 1.94976L7 6.8995L2.05025 1.94975" stroke="white" stroke-width="3"/>
+                                <path d="M11.9497 1.94976L7 6.8995L2.05025 1.94975" stroke="white" stroke-width="3"></path>
                                 </svg>
                                 
                             </div>
@@ -247,261 +478,14 @@
                         flex justify-center items-center font-['NasalizationW05_ExtraLight']"> connect </div>
                     </div>
 
-                    <div id="showGridInfo" class=" w-[30px] h-[30px] absolute right-5
-                    md:bottom-[-50px] md:top-auto
-                     justify-end items-center rotate-90 transition-all hidden lg:flex">  
-                        <svg width="100%" height="100%" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                       <path d="M11.9497 1.94976L7 6.8995L2.05025 1.94975" stroke="white" stroke-width="3"></path>
-                       </svg>
-                       
-                   </div>
 
-
-                </div>
-
-            </section>
-
-
-
-
-
-            <section class="swiper-slide">
-
-                <div class="container mt-24">
-
-                    <h2 class="font-['NasalizationW05_ExtraLight'] text-2xl mb-8"> lets start! </h2>
-
-                    <div class="swiper_second_slide">
-                        <div class="swiper-wrapper">
-
-
-
-                            <div class="swiper-slide min-h-[551px] rounded flex flex-col justify-between">
-                                
-                                <div class="flex uppercase font-['NasalizationW05_ExtraLight'] text-[18px] px-[20px] pt-[20px] h-[54px] max-h-[54px]"> 
-                                    <span>1</span>
-                                    <span class="text-[#E89CD5FF] ml-[30px] inline-block">buy World</span>
-                                 </div>
-
-                                 <div class="-mt-6 relative -z-10 max-w-[380px] mx-auto">
-                                     <img src="img/2/slide_1.png" alt="sphere">
-                                 </div>
-
-                                 <div class="bg-[#151515] rounded-[20px] p-[20px] flex flex-col justify-between min-h-[252px]">
-                                    
-                                    <p class="text-[14px]">
-                                        Покупай землю в разделе WORLDS, 
-                                        создавай свой мир без ограничений , 
-                                        организуй криптодеревни и сообщества 
-                                        и зарабатывай!  
-                                        Посещай миры ведущих мировых брендов, 
-                                        артистов и друзей
-                                    </p>
-
-                                    <div class="uppercase font-['NasalizationW05_ExtraLight'] text-center
-                                    mt-[40px]"> 
-                                        <a href="http://weimei9l.beget.tech/solar-system/" class="inline-block transition-all
-                                        hover:bg-[#E89CD5FF] hover:text-black
-                                        green-border-20px px-[30%] py-[28px]
-                                        xl:px-[40px] xl:py-[20px]" tar>start</a> 
-                                    </div>
-
-                                 </div>
-
-                            </div>
-                            
-                            
-                            <div class="swiper-slide min-h-[551px] rounded flex flex-col justify-between">
-                                
-                                <div class="flex uppercase font-['NasalizationW05_ExtraLight'] text-[18px] px-[20px] pt-[20px] h-[54px] max-h-[54px]"> 
-                                    <span>2</span>
-                                    <span class="text-[#E89CD5FF] ml-[30px] inline-block">buy AVATARS                                     </span>
-                                 </div>
-
-                                 <div class="-mt-6 relative -z-10 max-w-[380px] mx-auto">
-                                     <img src="img/2/slide_2.png" alt="sphere">
-                                 </div>
-
-                                 <div class="bg-[#151515] rounded-[20px] p-[20px] flex flex-col justify-between min-h-[252px]">
-                                    
-                                    <p class="text-[14px]">
-                                        Создай своего персонального 
-                                        аватара или выбери 
-                                        виртуальную модель с 
-                                        уникальной историей в 
-                                        разделе AVATARS
-                                    </p>
-
-                                    <div class="uppercase font-['NasalizationW05_ExtraLight'] text-center
-                                    mt-[40px]"> 
-                                        <a href="#" class="inline-block transition-all
-                                        hover:bg-[#E89CD5FF] hover:text-black
-                                        green-border-20px px-[30%] py-[28px]
-                                        xl:px-[40px] xl:py-[20px]">start</a> 
-                                    </div>
-
-                                 </div>
-
-                            </div>
-                            
-                            <div class="swiper-slide min-h-[551px] rounded flex flex-col justify-between">
-                                
-                                <div class="flex uppercase font-['NasalizationW05_ExtraLight'] text-[18px] px-[20px] pt-[20px] h-[54px] max-h-[54px]"> 
-                                    <span>3</span>
-                                    <span class="text-[#E89CD5FF] ml-[30px] inline-block">buy fashion for avatars</span>
-                                 </div>
-
-                                 <div class="-mt-6 relative -z-10 max-w-[380px] mx-auto">
-                                     <img src="img/2/slide_3.png" alt="sphere">
-                                 </div>
-
-                                 <div class="bg-[#151515] rounded-[20px] p-[20px] flex flex-col justify-between min-h-[252px]">
-                                    
-                                    <p class="text-[14px]">
-                                        Собери уникальный образ 
-                                        для своего аватара в разделе 
-                                        Fashion и покупай модную одежду 
-                                        у современных диджитал дизайнеров 
-                                        и брендов
-                                    </p>
-
-                                    <div class="uppercase font-['NasalizationW05_ExtraLight'] text-center
-                                    mt-[40px]"> 
-                                        <a href="#" class="inline-block transition-all
-                                        hover:bg-[#E89CD5FF] hover:text-black
-                                        green-border-20px px-[30%] py-[28px]
-                                        xl:px-[40px] xl:py-[20px]">start</a> 
-                                    </div>
-
-                                 </div>
-
-                            </div>
-                            
-
-
-
-                        </div>
-                    </div>  
-                </div>
-
-            </section>
-
-
-            <section class="swiper-slide ">
-                
-                <div class="container mt-24">
-                    <h2 class="font-['NasalizationW05_ExtraLight'] text-2xl mb-[70px]"> OBJ Coin  </h2>
-
-
-                    <div class="grid grid-cols-2 grid-rows-1 2xl:grid-cols-1">
-                        
-                        <div class="flex flex-col justify-between max-w-[598px]
-                        2xl:max-w-full 2xl:flex-row 2xl:w-full md:overflow-auto">
-                            <div class="p-[30px] green-border-20px 2xl:mr-6 
-                            md:min-w-[300px]"> 
-                                <div class="text-[#E89CD5FF] font-['NasalizationW05_ExtraLight'] mb-6">Mining</div>    
-                                
-                                <p class="text-[20px] lg:text-[14px]">
-                                    Сделай свой мир популярным 
-                                    и зарабатывай больше!  
-                                    Чем больше гостей — 
-                                    тем выше процент от стейкинга.
-                                </p>
-
-                            </div>
-                            <div class="p-[30px] green-border-20px mt-[26px] 2xl:mt-0
-                            md:min-w-[300px]">
-                                <div class="text-[#E89CD5FF] font-['NasalizationW05_ExtraLight'] mb-6">Exchange & SWAP</div>
-
-                                <p class="text-[20px] lg:text-[14px]">
-                                    Генерируй Obj Coin в AVATARS PLANET  
-                                    и легко конвертируй их на внутреннем свопе 
-                                    в популярные криптовалютные пары:
-                                    USDT / OBJ , DOGE / OBJ, ETH / OBJ, BTC/ OBJ, 
-                                    MATIC / OBJ и так далее..
-                                    Мгновенные внутренние переводы между участниками.
-                                    SWAP и доступ к финансовым 
-                                    инструментам внутри платформы. 
-                                </p>
-
-                            </div>
-                        </div>
-
-
-                        <div class="rounded-[20px] overflow-hidden ml-4 2xl:hidden">
-                            <img src="img/3/main_imagejpg.jpg" alt="coin image">
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section class="swiper-slide flex justify-center items-center">
-                <div class="container">
-
-
-                    <div class="flex justify-between relative xl:flex-col">
-
-                        <div class="object-cover absolute -z-10 rounded-full
-                        left-5 w-[1500px] top-0 h-[1500px] pointer-events-none
-                        translate-x-[-35%] translate-y-[-35%]
-                        ">
-                        <img src="img/blur.png" alt="">
-                        </div>
-
-                        <div class="max-w-[820px] p-[30px] green-border-20px flex 
-                        justify-center items-center">
-                            <img src="img/4/table.svg" alt="">
-                        </div>
-                        <div class="ml-8 max-w-[40%] flex flex-col justify-between
-                        xl:max-w-full xl:ml-0 xl:mt-[40px]">
-                            <div class="p-[30px] green-border-20px "> 
-                                <div class="text-[#E89CD5FF] font-['NasalizationW05_ExtraLight'] mb-6">Exchange & SWAP</div>    
-                                
-                                <p class="text-[20px] lg:text-[12px]">
-                                    AVATARS PLANET, это рыночная модель 
-                                    в которой нет ограничения максимальной 
-                                    циркуляции миров. 
-                                   После каждой покупки земли в метаверсе, 
-                                   создаются новые, часть из которых в 
-                                   последствии “сжигается” не будучи купленной. 
-                                </p>
-
-                            </div>
-
-                            <div class="uppercase font-['NasalizationW05_ExtraLight'] text-center
-                            mt-[40px] w-full"> 
-                                        <a href="#" class="inline-block transition-all
-                                        hover:bg-[#E89CD5FF] hover:text-black
-                                        green-border-20px w-full py-[28px]
-                                        xl:px-[40px] xl:py-[20px]">buy coin</a> 
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            
-            </section>
-
-
-
-            <section class="swiper-slide flex justify-center items-center">
-
-                <div class="container">
-                    <h2 class="font-['NasalizationW05_ExtraLight'] text-2xl mb-[70px]"> transfer your coins to:  </h2>
-
-
+<!-- 
                     <div class="flex justify-between max-w-[505px] my-[80px]">
                         <div class="max-w-[81px]"> <img src="img/5/four_logos.svg" alt=""> </div>
                         <div class="max-w-[81px]"> <img src="img/5/four_logos.svg" alt=""> </div>
                         <div class="max-w-[81px]"> <img src="img/5/four_logos.svg" alt=""> </div>
                         <div class="max-w-[81px]"> <img src="img/5/four_logos.svg" alt=""> </div>
-                    </div>
+                    </div> -->
 
 
                     <div class="p-[30px] max-w-[580px]  ">
@@ -534,7 +518,7 @@
             </section>
 
 
-            <section class="swiper-slide  bg-black">
+            <section class="swiper-slide  bg-black fadeAnimateSlide">
 
                 <div class="roapmap bg-black">
 
@@ -905,7 +889,7 @@ Avatars Planet
 
 
 
-            <section class="swiper-slide relative">
+            <section class="swiper-slide relative fadeAnimateSlide">
 
 
 
@@ -971,6 +955,8 @@ Avatars Planet
         <div class="swiper-scrollbar cursor-pointer"></div>
     </main>
 
+    <!-- <script src="js/bundle_plug.js"></script> -->
+    <script src="js/background.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/main.js"></script>
