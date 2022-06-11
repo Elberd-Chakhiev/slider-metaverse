@@ -31,7 +31,7 @@ const mainSliderScreens = new Swiper('.swiper', {
         el: '.swiper-pagination',
         type: 'fraction',
     }, 
-    initialSlide: 4
+    // initialSlide: 4
 })
 
 
