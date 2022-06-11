@@ -1,13 +1,10 @@
-console.log(mainSliderScreens.activeIndex)
-
-
-
-
-
+console.log(mainSliderScreens.activeIndex + ' animate init')
 
 const slides = document.querySelectorAll('.fadeAnimateSlide')
-const fadeFromBottom = (indexSlide, index) =>{
-    if(mainSliderScreens.activeIndex === index){
+const fadeFromBottom = (indexSlide, index) =>
+{
+    if(mainSliderScreens.activeIndex === index)
+    {
         indexSlide.style.cssText = `
         transition: 1.5s;
         position: relative;
@@ -24,28 +21,26 @@ const fadeFromBottom = (indexSlide, index) =>{
 }
 
 const grid = document.querySelectorAll('.gridAnimate')
-const gridAnimate = (index) =>{
-    
-
-    if(mainSliderScreens.activeIndex === index){
-        for(let i = 0; i < grid.length; i++){
-            setTimeout(() =>{
-                // grid[i].classList.remove('gridAnimate');
+const gridAnimate = (index) =>
+{
+    if(mainSliderScreens.activeIndex === index)
+    {
+        for(let i = 0; i < grid.length; i++)
+        {
+            setTimeout(() =>
+            {
                 grid[i].style.left = '0px';
                 grid[i].style.opacity = '1';
-
             }, 500 * (i+1))
-    
         }
     }
-
-
 }
 
 const coinAnimate = document.querySelector('.animateSlideCoin')
-const slideRotateAnimate = index =>{
-    
-    if(mainSliderScreens.activeIndex === index){
+const slideRotateAnimate = index =>
+{
+    if(mainSliderScreens.activeIndex === index)
+    {
         coinAnimate.style.cssText = `
         transition: 1s;
         transform: scale(1)`
@@ -54,21 +49,16 @@ const slideRotateAnimate = index =>{
         transition: 1s;
         transform: scale(1.2)`
     }
-
-
 }
 
-
-
-
-let watch = () =>{
-    for(let i = 0; i < slides.length; i++){
+let watch = () =>
+{
+    for(let i = 0; i < slides.length; i++)
+    {
         fadeFromBottom(slides[i], i)
     }
     gridAnimate(1)
     slideRotateAnimate(2)
 }
-
-
 
 setInterval(()=> watch() ,100)
